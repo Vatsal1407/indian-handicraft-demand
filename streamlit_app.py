@@ -116,9 +116,8 @@ SEASONAL_PATTERN = [
 @st.cache_resource
 def load_model():
     """Load trained hybrid model results and summary"""
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    model_path = os.path.join(base_dir, "results", "enhanced_hybrid_results.pkl")
-    summary_path = os.path.join(base_dir, "results", "enhanced_hybrid_summary.csv")
+    model_path = "results/enhanced_hybrid_results.pkl"
+    summary_path = "results/enhanced_hybrid_summary.csv"
     
     model_data = None
     summary_df = None
